@@ -7,7 +7,7 @@ import HomePage from "./index"
 test("renders a message", () => {
     const { container, getByText } = render(<HomePage />)
 
-    expect(getByText("Welcome to Next.js!")).toBeInTheDocument()
+    expect(getByText("welcomeText")).toBeInTheDocument()
 
     expect(container.firstChild).toMatchSnapshot()
 })

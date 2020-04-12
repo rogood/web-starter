@@ -2,6 +2,6 @@
 
 exports[`renders a message 1`] = `
 <div>
-  Welcome to Next.js!
+  welcomeText
 </div>
 `;

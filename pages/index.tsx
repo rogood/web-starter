@@ -1,7 +1,12 @@
 import React from "react"
+import HomePage from "./home"
 
-function HomePage() {
-    return <div>Welcome to Next.js!</div>
+const Index = () => {
+    return <HomePage />
 }
 
-export default HomePage
+Index.getInitialProps = async () => ({
+    namespacesRequired: [],
+})
+
+export default Index
