@@ -1,4 +1,4 @@
-# Web Starter Project 2020
+# Web Starter Project
 
 ## Prerequisites
 
