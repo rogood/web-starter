@@ -1,5 +1,6 @@
 import React from 'react'
-import NavBar from './navBar'
+import Nav from './nav'
+import Footer from './footer'
 
 type Props = {
     children: any
@@ -8,8 +9,9 @@ type Props = {
 function MainLayout({ children }: Props) {
     return (
         <div>
-            <NavBar />
+            <Nav />
             {children}
+            <Footer />
         </div>
     )
 }
