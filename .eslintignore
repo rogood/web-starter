@@ -1,2 +1,4 @@
+node_modules
+.next
+pages
 jest.config.js
-pages/__snapshots__/**/*

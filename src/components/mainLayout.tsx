@@ -2,7 +2,7 @@ import React from "react"
 import NavBar from "./navBar"
 
 type Props = {
-    children: any
+    children: any;
 }
 
 function MainLayout({ children }: Props) {
