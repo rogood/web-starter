@@ -14,8 +14,4 @@ const AboutPage = ({ t }: Props) => {
     )
 }
 
-AboutPage.getInitialProps = async () => ({
-    namespacesRequired: ["about"],
-})
-
 export default withTranslation("about")(AboutPage)
