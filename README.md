@@ -1,5 +1,9 @@
 # Web Starter Project
 
+This is a starter project with all the configuration needed for a real life proejct.
+
+This template currently uses the [Business Casual bootstrap theme](https://startbootstrap.com/themes/business-casual/).
+
 ## Prerequisites
 
 [https://nodejs.org/](nodeJS) - This application was built against version 11.2.0

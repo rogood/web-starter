@@ -1,11 +1,10 @@
 // @ts-nocheck
 import I18nProvider from 'next-translate/I18nProvider'
 import React from 'react'
-import C from '../pages_/contact'
+import C from '../pages_/products'
 import ns0 from '../locales/en/common.json'
-import ns1 from '../locales/en/contact.json'
 
-const namespaces = { 'common': ns0, 'contact': ns1 }
+const namespaces = { 'common': ns0 }
 
 export default function Page(p){
   return (
@@ -25,4 +24,4 @@ if(C.getInitialProps) {
 
 
 
-export * from '../pages_/contact'
+export * from '../pages_/products'
