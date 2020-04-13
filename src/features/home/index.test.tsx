@@ -7,7 +7,7 @@ import HomePage from "./index"
 test("renders a message", () => {
     const { container, getByText } = render(<HomePage />)
 
-    expect(getByText("welcomeText")).toBeInTheDocument()
+    expect(getByText("home:welcomeText")).toBeInTheDocument()
 
     expect(container.firstChild).toMatchSnapshot()
 })
