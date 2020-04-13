@@ -1,7 +1,7 @@
-import React from "react"
-import MainLayout from "../../components/mainLayout"
+import React from 'react'
+import MainLayout from '../../components/mainLayout'
 
-import useTranslation from "next-translate/useTranslation"
+import useTranslation from 'next-translate/useTranslation'
 
 export default function ContactPage() {
     const { t } = useTranslation()

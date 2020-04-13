@@ -1,5 +1,5 @@
-import React from "react"
-import NavBar from "./navBar"
+import React from 'react'
+import NavBar from './navBar'
 
 type Props = {
     children: any;

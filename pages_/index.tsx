@@ -1,5 +1,5 @@
-import React from "react"
-import HomePage from "../src/features/home"
+import React from 'react'
+import HomePage from '../src/features/home'
 
 const Index = () => <HomePage />
 
