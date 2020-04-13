@@ -9,6 +9,7 @@
         "test": "jest",
         "test:watch": "jest --watch",
         "test:coverage": "jest --coverage",
+        "test:updatesnapshots": "jest -u",
         "lint": "eslint pages/**/* src/**/*",
         "lint:fix": "eslint --fix pages/**/*",
         "format": "prettier --write \"pages/**/*\""
