@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar matches screenshot 1`] = `
+<div>
+  <div>
+    <nav>
+      <div
+        class="logo-content"
+      >
+        <a
+          href="/"
+        >
+          <img
+            alt="List It Logo"
+            src="images/logo-inverse.png"
+          />
+        </a>
+      </div>
+      <div
+        class="right-content"
+      />
+    </nav>
+    <style>
+      
+                nav {
+                    display: flex;
+                    background-color: #37A6CD;
+                    height: 32px;
+                    width: calc(100vw - 32px);
+                    padding: 16px;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: #FFF;
+                }
+                .logo-content {
+                }
+                .logo-content img {
+                    height: 32px;
+                }
+                .right-content a {
+                    color: #FFF;
+                    text-decoration: none;
+                }
+            
+    </style>
+  </div>
+</div>
+`;

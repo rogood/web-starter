@@ -2,54 +2,57 @@ import React from 'react'
 import MainLayout from '../../components/mainLayout'
 
 import useTranslation from 'next-translate/useTranslation'
+import colors from '../../constants/colors'
 
-export default function AboutPage() {
-    const { t } = useTranslation()
+export default function AboutPage(): JSX.Element {
     return (
-        <MainLayout>
-            <section className="page-section about-heading">
+        <div>
+            <MainLayout>
                 <div className="container">
-                    <img
-                        className="img-fluid rounded about-heading-img mb-3 mb-lg-0"
-                        src="img/about.jpg"
-                        alt=""
-                    />
-                    <div className="about-heading-content">
-                        <div className="row">
-                            <div className="col-xl-9 col-lg-10 mx-auto">
-                                <div className="bg-faded rounded p-5">
-                                    <h2 className="section-heading mb-4">
-                                        <span className="section-heading-upper">
-                                            Strong Coffee, Strong Roots
-                                        </span>
-                                        <span className="section-heading-lower">
-                                            About Our Cafe
-                                        </span>
-                                    </h2>
-                                    <p>
-                                        Founded in 1987 by the Hernandez
-                                        brothers, our establishment has been
-                                        serving up rich coffee sourced from
-                                        artisan farmers in various regions of
-                                        South and Central America. We are
-                                        dedicated to travelling the world,
-                                        finding the best coffee, and bringing
-                                        back to you here in our cafe.
-                                    </p>
-                                    <p className="mb-0">
-                                        We guarantee that you will fall in{' '}
-                                        <em>lust</em> with our decadent blends
-                                        the moment you walk inside until you
-                                        finish your last sip. Join us for your
-                                        daily routine, an outing with friends,
-                                        or simply just to enjoy some alone time.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="info-container">
+                        <h1>We are List It!</h1>
+                        <p>
+                            We make it easy for you to make simple to do lists.
+                        </p>
+                        <p>
+                            This is actually a starter template designed to make
+                            it quick and easy to get a basic application up and
+                            running.
+                        </p>
                     </div>
                 </div>
-            </section>
-        </MainLayout>
+            </MainLayout>
+            <style jsx>{`
+                .container {
+                    display: flex;
+                    background: linear-gradient(
+                            rgba(74, 74, 74, 0.6),
+                            rgba(74, 74, 74, 0.6)
+                        ),
+                        url('images/about-bg.jpg');
+                    background-size: cover;
+                    width: 100vw;
+                    height: calc(100vh - 128px);
+                }
+                .info-container {
+                    background-color: ${colors.white};
+                    border-radius: 16px;
+                    padding: 32px;
+                    margin: 32px;
+                    width: 100vw;
+                    height: fit-content;
+                }
+                h1 {
+                    font-size: 32px;
+                    font-weight: bold;
+                    margin-bottom: 16px;
+                }
+                p {
+                    font-size: 18px;
+                    margin: 8px 0;
+                    margin-bottom: 16px;
+                }
+            `}</style>
+        </div>
     )
 }

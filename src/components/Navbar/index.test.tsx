@@ -1,10 +1,10 @@
 import React from 'react'
-import HomePage from './index'
+import Navbar from './index'
 import { render } from '@testing-library/react'
 
-describe('Home Page', () => {
+describe('Navbar', () => {
     test('matches screenshot', () => {
-        const { container } = render(<HomePage />)
+        const { container } = render(<Navbar />)
         expect(container).toMatchSnapshot()
     })
 })

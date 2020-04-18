@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Page matches screenshot 1`] = `
+<div>
+  <div>
+    <div
+      class="container"
+    >
+      <div
+        class="content"
+      >
+        <div
+          class="panel"
+        >
+          <div>
+            <div
+              class="container"
+            >
+              <img
+                alt="List It Logo"
+                src="images/logo.png"
+              />
+              <h1>
+                Welcome to List It!
+              </h1>
+              <p>
+                Register or log in to create your lists.
+              </p>
+              <button>
+                Sign in with Google
+              </button>
+            </div>
+            <style>
+              
+                .container {
+                    background-color: #FFF;
+                    border-radius: 16px;
+                    width: 320px;
+                    padding: 32px;
+                    text-align: center;
+                }
+                img {
+                    height: 86px;
+                    margin-bottom: 32px;
+                }
+                h1 {
+                    font-size: 32px;
+                    font-weight: bold;
+                    margin-bottom: 16px;
+                }
+                p {
+                    font-size: 18px;
+                    margin: 8px 0;
+                    margin-bottom: 16px;
+                }
+            
+            </style>
+          </div>
+        </div>
+      </div>
+      <div>
+        <footer
+          class="footer"
+        >
+          <ul>
+            <li>
+              <a
+                href="/about"
+              >
+                About Us
+              </a>
+            </li>
+          </ul>
+          <p
+            class="m-0 small"
+          >
+            Copyright © List It 2020
+          </p>
+        </footer>
+        <style>
+          
+                .footer {
+                    display: flex;
+                    background-color: #4A4A4A;
+                    height: 32px;
+                    width: calc(100vw - 64px);
+                    padding: 16px 32px;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: #FFF;
+                }
+                ul {
+                    list-style-type: none;
+                }
+                a {
+                    color: #FFF;
+                    text-decoration: none;
+                }
+            
+        </style>
+      </div>
+    </div>
+    <style>
+      
+                .container {
+                    background: linear-gradient(
+                            rgba(74, 74, 74, 0.6),
+                            rgba(74, 74, 74, 0.6)
+                        ),
+                        url('images/welcome-bg.jpg');
+                    background-size: cover;
+                    width: 100vw;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-content: space-between;
+                }
+                .content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100vw;
+                    height: 100%;
+                }
+                .panel {
+                    margin: 0px auto;
+                }
+            
+    </style>
+  </div>
+</div>
+`;

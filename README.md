@@ -2,8 +2,6 @@
 
 This is a starter project with all the configuration needed for a real life proejct.
 
-This template currently uses the [Business Casual bootstrap theme](https://startbootstrap.com/themes/business-casual/).
-
 ## Prerequisites
 
 [https://nodejs.org/](nodeJS) - This application was built against version 11.2.0
@@ -54,3 +52,9 @@ This is a Next.js site. To learn more, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+## Attributions
+
+Welcome Page Background Photo by Cathryn Lavery on Unsplash
+
+About Page Background Photo by Jealous Weekends on Unsplash

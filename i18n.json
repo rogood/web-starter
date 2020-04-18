@@ -8,6 +8,6 @@
       "*": ["common"],
       "/": ["home"],
       "/about": ["about"],
-      "/contact": ["contact"]
+      "/dashboard": ["dashboard"]
     }
   }
