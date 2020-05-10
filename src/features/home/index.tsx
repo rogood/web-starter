@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Router from 'next/router'
 import LoginPanel from '../../components/LoginPanel'
 import Footer from '../../components/Footer'
+import { getLoggedInUser } from '../../api/api'
 
 export default function HomePage(): JSX.Element {
+    useEffect(function (): void {
+        if (getLoggedInUser()) {
+            Router.push('/dashboard')
+        }
+    }, [])
+
     return (
         <div>
             <div className="container">

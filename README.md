@@ -6,6 +6,8 @@ This is a starter project with all the configuration needed for a real life proe
 
 [https://nodejs.org/](nodeJS) - This application was built against version 11.2.0
 
+Add firebase config in ./firebase-config.json
+
 ## Getting Started
 
 ```bash

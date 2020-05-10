@@ -1,14 +1,27 @@
 import React from 'react'
+import Router from 'next/router'
 import colors from '../../constants/colors'
+import { signIn } from '../../api/api'
 
 export default function LoginPanel(): JSX.Element {
+    async function onGoogleSignInClick(): Promise<void> {
+        try {
+            await signIn()
+            Router.push('/dashboard')
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
     return (
         <div>
             <div className="container">
                 <img alt="List It Logo" src="images/logo.png"></img>
                 <h1>Welcome to List It!</h1>
                 <p>Register or log in to create your lists.</p>
-                <button>Sign in with Google</button>
+                <button onClick={onGoogleSignInClick}>
+                    Sign in with Google
+                </button>
             </div>
             <style jsx>{`
                 .container {

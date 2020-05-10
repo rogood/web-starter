@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import MainLayout from '../../components/mainLayout'
+import { getLoggedInUser } from '../../api/api'
 
 import useTranslation from 'next-translate/useTranslation'
 
 export default function DashboardPage(): JSX.Element {
+    const [user, setUser] = useState({ displayName: '' })
+
+    useEffect(function (): void {
+        setUser(getLoggedInUser())
+    }, [])
+
     return (
         <div>
             <MainLayout>
                 <div className="container">
                     <div className="content">
-                        <h1>Hi Regina Philange!</h1>
+                        {user && user.displayName && (
+                            <h1>{`Hi ${user.displayName}!`}</h1>
+                        )}
                     </div>
                 </div>
             </MainLayout>
