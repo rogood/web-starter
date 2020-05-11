@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import MainLayout from '../../components/mainLayout'
 import { getLoggedInUser } from '../../api/api'
+import firebase from '../../firebase'
 
 import useTranslation from 'next-translate/useTranslation'
 
@@ -9,6 +10,14 @@ export default function DashboardPage(): JSX.Element {
 
     useEffect(function (): void {
         setUser(getLoggedInUser())
+
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+                setUser(user)
+            } else {
+                setUser({ displayName: '' })
+            }
+        })
     }, [])
 
     return (
