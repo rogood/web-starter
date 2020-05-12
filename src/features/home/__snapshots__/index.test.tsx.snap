@@ -26,7 +26,9 @@ exports[`Home Page matches screenshot 1`] = `
               <p>
                 Register or log in to create your lists.
               </p>
-              <button>
+              <button
+                class="ui button"
+              >
                 Sign in with Google
               </button>
             </div>
@@ -59,45 +61,118 @@ exports[`Home Page matches screenshot 1`] = `
         </div>
       </div>
       <div>
-        <footer
-          class="footer"
+        <div
+          class="ui inverted vertical segment"
+          style="padding: 5em 0em;"
         >
-          <ul>
-            <li>
-              <a
-                href="/about"
-              >
-                About Us
-              </a>
-            </li>
-          </ul>
-          <p
-            class="m-0 small"
+          <div
+            class="ui container"
           >
-            Copyright © List It 2020
-          </p>
-        </footer>
-        <style>
-          
-                .footer {
-                    display: flex;
-                    background-color: #4A4A4A;
-                    height: 32px;
-                    width: calc(100vw - 64px);
-                    padding: 16px 32px;
-                    align-items: center;
-                    justify-content: space-between;
-                    color: #FFF;
-                }
-                ul {
-                    list-style-type: none;
-                }
-                a {
-                    color: #FFF;
-                    text-decoration: none;
-                }
-            
-        </style>
+            <div
+              class="ui inverted stackable divided grid"
+            >
+              <div
+                class="row"
+              >
+                <div
+                  class="three wide column"
+                >
+                  <a
+                    href="/about"
+                  >
+                    <h4
+                      class="ui inverted header"
+                    >
+                      About
+                    </h4>
+                  </a>
+                  <div
+                    class="ui inverted link list"
+                    role="list"
+                  >
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      Sitemap
+                    </a>
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      Contact Us
+                    </a>
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      Religious Ceremonies
+                    </a>
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      Gazebo Plans
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="three wide column"
+                >
+                  <h4
+                    class="ui inverted header"
+                  >
+                    Services
+                  </h4>
+                  <div
+                    class="ui inverted link list"
+                    role="list"
+                  >
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      Banana Pre-Order
+                    </a>
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      DNA FAQ
+                    </a>
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      How To Access
+                    </a>
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      Favorite X-Men
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="seven wide column"
+                >
+                  <h4
+                    class="ui inverted header"
+                  >
+                    Footer Header
+                  </h4>
+                  <p>
+                    Extra space for a call to action inside the footer that could help re-engage users.
+                  </p>
+                  <div>
+                    Copyright © List It 2020
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <style>

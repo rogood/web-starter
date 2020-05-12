@@ -1,11 +1,28 @@
-import React, { ReactNode } from 'react'
+import React, { useEffect, useState, ReactNode } from 'react'
 import colors from '../../constants/colors'
+import { getLoggedInUser } from '../../api/api'
+import firebase from '../../firebase'
+import { Container, Dropdown, Image, Menu } from 'semantic-ui-react'
 
 type Props = {
     rightContent?: ReactNode
 }
 
 export default function Navbar({ rightContent }: Props): JSX.Element {
+    const [user, setUser] = useState({ displayName: '' })
+
+    useEffect(function (): void {
+        setUser(getLoggedInUser())
+
+        firebase.auth().onAuthStateChanged(function (user) {
+            if (user) {
+                setUser(user)
+            } else {
+                setUser({ displayName: '' })
+            }
+        })
+    }, [])
+
     return (
         <div>
             <nav>
@@ -19,8 +36,46 @@ export default function Navbar({ rightContent }: Props): JSX.Element {
                 </div>
                 <div className="right-content">{rightContent}</div>
             </nav>
+            <Menu fixed="top" inverted as="nav">
+                <Container>
+                    <Menu.Item as="a" header href="/">
+                        <Image
+                            size="tiny"
+                            src="images/logo-inverse.png"
+                            style={{ marginRight: '1.5em' }}
+                        />
+                    </Menu.Item>
+                    <Menu.Menu position="right">
+                        <Dropdown
+                            item
+                            simple
+                            text={
+                                user && user.displayName
+                                    ? user.displayName
+                                    : 'Log In'
+                            }
+                        >
+                            <Dropdown.Menu>
+                                <Dropdown.Item>List Item</Dropdown.Item>
+                                <Dropdown.Item>List Item</Dropdown.Item>
+                                <Dropdown.Divider />
+                                <Dropdown.Header>Header Item</Dropdown.Header>
+                                <Dropdown.Item>
+                                    <i className="dropdown icon" />
+                                    <span className="text">Submenu</span>
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item>List Item</Dropdown.Item>
+                                        <Dropdown.Item>List Item</Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown.Item>
+                                <Dropdown.Item>List Item</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
+                    </Menu.Menu>
+                </Container>
+            </Menu>
             <style jsx>{`
-                nav {
+                .nav {
                     display: flex;
                     background-color: ${colors.primary};
                     height: 32px;

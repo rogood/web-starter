@@ -15,20 +15,7 @@ function MainLayout({ children }: Props): JSX.Element {
                 <div className="main-content">{children}</div>
                 <Footer />
             </div>
-            <style jsx>{`
-                .container {
-                    background-size: cover;
-                    width: 100vw;
-                    height: 100vh;
-                    display: flex;
-                    flex-direction: column;
-                    align-content: space-between;
-                    background-color: ${colors.white};
-                }
-                .main-content {
-                    height: 100vh;
-                }
-            `}</style>
+            <style jsx>{``}</style>
         </div>
     )
 }

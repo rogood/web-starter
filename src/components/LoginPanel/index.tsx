@@ -2,6 +2,7 @@ import React from 'react'
 import Router from 'next/router'
 import colors from '../../constants/colors'
 import { signIn } from '../../api/api'
+import { Button } from 'semantic-ui-react'
 
 export default function LoginPanel(): JSX.Element {
     async function onGoogleSignInClick(): Promise<void> {
@@ -19,9 +20,9 @@ export default function LoginPanel(): JSX.Element {
                 <img alt="List It Logo" src="images/logo.png"></img>
                 <h1>Welcome to List It!</h1>
                 <p>Register or log in to create your lists.</p>
-                <button onClick={onGoogleSignInClick}>
+                <Button onClick={onGoogleSignInClick}>
                     Sign in with Google
-                </button>
+                </Button>
             </div>
             <style jsx>{`
                 .container {
