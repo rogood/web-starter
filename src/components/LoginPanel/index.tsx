@@ -1,16 +1,19 @@
 import React from 'react'
 import Router from 'next/router'
 import colors from '../../constants/colors'
-import { signIn } from '../../api/api'
 import { Button } from 'semantic-ui-react'
+import useErrorToast from '../../hooks/useErrorToast'
+import { signIn } from '../../api/auth'
 
 export default function LoginPanel(): JSX.Element {
+    const { showErrorToast } = useErrorToast()
+
     async function onGoogleSignInClick(): Promise<void> {
         try {
             await signIn()
-            Router.push('/dashboard')
+            Router.push('/feeds')
         } catch (error) {
-            console.error(error)
+            showErrorToast(error)
         }
     }
 

@@ -1,12 +1,24 @@
 # Web Starter Project
 
-This is a starter project with all the configuration needed for a real life proejct.
+This is a starter project with all the configuration needed for a real life web proejct.
 
 ## Prerequisites
 
 [https://nodejs.org/](nodeJS) - This application was built against version 11.2.0
 
 Add firebase config in ./firebase-config.json
+```
+    {
+        "apiKey": <YOUR_API_KEY>,
+        "authDomain": <YOUR_AUTH_DOMAIN>,
+        "databaseURL": <YOUR_DATABASE_URL>,
+        "projectId": <YOUR_PROJECT_ID>,
+        "storageBucket": <YOUR_STORAGE_BUCKET>,
+        "messagingSenderId": <YOUR_MESSAGING_SENDER_ID>,
+        "appId": <YOUR_APP_ID>,
+        "measurementId": <YOUR_MEASUREMENT_ID>
+    }
+```
 
 ## Getting Started
 
@@ -42,7 +54,7 @@ npm test:updatesnapshots
 
 ## Adding Locales
 
-Add new location strings in the `locales` folder under the desired locale.
+Add new location strings in the `locales` folder under the desired locale. Don't forget to update i18n.json.
 
 ## About the pages folder
 

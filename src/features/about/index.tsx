@@ -5,20 +5,16 @@ import useTranslation from 'next-translate/useTranslation'
 import colors from '../../constants/colors'
 
 export default function AboutPage(): JSX.Element {
+    const { t } = useTranslation()
+
     return (
         <div>
             <MainLayout>
                 <div className="container">
                     <div className="info-container">
-                        <h1>We are List It!</h1>
-                        <p>
-                            We make it easy for you to make simple to do lists.
-                        </p>
-                        <p>
-                            This is actually a starter template designed to make
-                            it quick and easy to get a basic application up and
-                            running.
-                        </p>
+                        <h1>{t('about:title')}</h1>
+                        <p>{t('about:paragraph1')}</p>
+                        <p>{t('about:paragraph2')}</p>
                     </div>
                 </div>
             </MainLayout>
@@ -32,7 +28,7 @@ export default function AboutPage(): JSX.Element {
                         url('images/about-bg.jpg');
                     background-size: cover;
                     width: 100vw;
-                    height: calc(100vh - 128px);
+                    height: 100vh;
                 }
                 .info-container {
                     background-color: ${colors.white};
