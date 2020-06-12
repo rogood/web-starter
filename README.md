@@ -6,6 +6,11 @@ This is a starter project with all the configuration needed for a real life web 
 
 [https://nodejs.org/](nodeJS) - This application was built against version 11.2.0
 
+Now CLI
+```
+npm i -g now@latest
+```
+
 Add firebase config in ./firebase-config.json
 ```
     {

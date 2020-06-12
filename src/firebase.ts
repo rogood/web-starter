@@ -3,9 +3,10 @@ import 'firebase/auth'
 import 'firebase/firestore'
 import 'firebase/analytics'
 
-import config from '../firebase.config.json'
-
 if (!firebase.apps.length) {
+    const configString = process.env.FIREBASE_CONFIG.replace(/\\/g, '')
+    const config = JSON.parse(configString)
+
     firebase.initializeApp(config)
 }
 
