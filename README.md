@@ -1,12 +1,29 @@
 # Web Starter Project
 
-This is a starter project with all the configuration needed for a real life proejct.
-
-This template currently uses the [Business Casual bootstrap theme](https://startbootstrap.com/themes/business-casual/).
+This is a starter project with all the configuration needed for a real life web proejct.
 
 ## Prerequisites
 
 [https://nodejs.org/](nodeJS) - This application was built against version 11.2.0
+
+Now CLI
+```
+npm i -g now@latest
+```
+
+Add firebase config in ./firebase-config.json
+```
+    {
+        "apiKey": <YOUR_API_KEY>,
+        "authDomain": <YOUR_AUTH_DOMAIN>,
+        "databaseURL": <YOUR_DATABASE_URL>,
+        "projectId": <YOUR_PROJECT_ID>,
+        "storageBucket": <YOUR_STORAGE_BUCKET>,
+        "messagingSenderId": <YOUR_MESSAGING_SENDER_ID>,
+        "appId": <YOUR_APP_ID>,
+        "measurementId": <YOUR_MEASUREMENT_ID>
+    }
+```
 
 ## Getting Started
 
@@ -42,7 +59,7 @@ npm test:updatesnapshots
 
 ## Adding Locales
 
-Add new location strings in the `locales` folder under the desired locale.
+Add new location strings in the `locales` folder under the desired locale. Don't forget to update i18n.json.
 
 ## About the pages folder
 
@@ -54,3 +71,9 @@ This is a Next.js site. To learn more, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+## Attributions
+
+Welcome Page Background Photo by Cathryn Lavery on Unsplash
+
+About Page Background Photo by Jealous Weekends on Unsplash

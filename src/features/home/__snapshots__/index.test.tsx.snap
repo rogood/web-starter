@@ -1,32 +1,207 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a message 1`] = `
+exports[`Home Page matches screenshot 1`] = `
 <div>
-  <ul>
-    <li>
-      <a
-        href="/"
-      >
-        Home
-      </a>
-    </li>
-    <li>
-      <a
-        href="/about"
-      >
-        About Us
-      </a>
-    </li>
-    <li>
-      <a
-        href="/contact"
-      >
-        Contact Us
-      </a>
-    </li>
-  </ul>
   <div>
-    home:welcomeText
+    <div
+      class="container"
+    >
+      <div
+        class="content"
+      >
+        <div
+          class="panel"
+        >
+          <div>
+            <div
+              class="container"
+            >
+              <img
+                alt="List It Logo"
+                src="images/logo.png"
+              />
+              <h1>
+                Welcome to List It!
+              </h1>
+              <p>
+                Register or log in to create your lists.
+              </p>
+              <button
+                class="ui button"
+              >
+                Sign in with Google
+              </button>
+            </div>
+            <style>
+              
+                .container {
+                    background-color: #FFF;
+                    border-radius: 16px;
+                    width: 320px;
+                    padding: 32px;
+                    text-align: center;
+                }
+                img {
+                    height: 86px;
+                    margin-bottom: 32px;
+                }
+                h1 {
+                    font-size: 32px;
+                    font-weight: bold;
+                    margin-bottom: 16px;
+                }
+                p {
+                    font-size: 18px;
+                    margin: 8px 0;
+                    margin-bottom: 16px;
+                }
+            
+            </style>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class="ui inverted vertical segment"
+          style="padding: 5em 0em;"
+        >
+          <div
+            class="ui container"
+          >
+            <div
+              class="ui inverted stackable divided grid"
+            >
+              <div
+                class="row"
+              >
+                <div
+                  class="three wide column"
+                >
+                  <a
+                    href="/about"
+                  >
+                    <h4
+                      class="ui inverted header"
+                    >
+                      About
+                    </h4>
+                  </a>
+                  <div
+                    class="ui inverted link list"
+                    role="list"
+                  >
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      Sitemap
+                    </a>
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      Contact Us
+                    </a>
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      Religious Ceremonies
+                    </a>
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      Gazebo Plans
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="three wide column"
+                >
+                  <h4
+                    class="ui inverted header"
+                  >
+                    Services
+                  </h4>
+                  <div
+                    class="ui inverted link list"
+                    role="list"
+                  >
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      Banana Pre-Order
+                    </a>
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      DNA FAQ
+                    </a>
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      How To Access
+                    </a>
+                    <a
+                      class="item"
+                      role="listitem"
+                    >
+                      Favorite X-Men
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="seven wide column"
+                >
+                  <h4
+                    class="ui inverted header"
+                  >
+                    Footer Header
+                  </h4>
+                  <p>
+                    Extra space for a call to action inside the footer that could help re-engage users.
+                  </p>
+                  <div>
+                    Copyright © List It 2020
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      
+                .container {
+                    background: linear-gradient(
+                            rgba(74, 74, 74, 0.6),
+                            rgba(74, 74, 74, 0.6)
+                        ),
+                        url('images/welcome-bg.jpg');
+                    background-size: cover;
+                    width: 100vw;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    align-content: space-between;
+                }
+                .content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100vw;
+                    height: 100%;
+                }
+                .panel {
+                    margin: 0px auto;
+                }
+            
+    </style>
   </div>
 </div>
 `;

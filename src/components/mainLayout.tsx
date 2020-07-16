@@ -1,17 +1,26 @@
-import React from 'react'
-import Nav from './nav'
-import Footer from './footer'
+import React, { ReactNode } from 'react'
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 type Props = {
-    children: any
+    children: ReactNode
 }
 
-function MainLayout({ children }: Props) {
+function MainLayout({ children }: Props): JSX.Element {
     return (
         <div>
-            <Nav />
-            {children}
-            <Footer />
+            <div>
+                <Navbar />
+                <div className="main-content">{children}</div>
+                <Footer />
+            </div>
+            <style jsx>
+                {`
+                    .main-content {
+                        margin-top: 3.6em;
+                    }
+                `}
+            </style>
         </div>
     )
 }

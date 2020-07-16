@@ -1,13 +1,10 @@
-import '@testing-library/jest-dom/extend-expect'
 import React from 'react'
+import HomePage from './index'
 import { render } from '@testing-library/react'
 
-import HomePage from './index'
-
-test('renders a message', () => {
-    const { container, getByText } = render(<HomePage />)
-
-    // expect(getByText('home:welcomeTextError')).toBeInTheDocument()
-
-    // expect(container.firstChild).toMatchSnapshot()
+describe('Home Page', () => {
+    test('matches screenshot', () => {
+        const { container } = render(<HomePage />)
+        expect(container).toMatchSnapshot()
+    })
 })

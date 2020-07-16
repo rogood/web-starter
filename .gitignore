@@ -28,3 +28,10 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# next-pwa
+**/public/workbox-*.js*
+**/public/sw.js*
+firebase.config.json
+
+.vercel

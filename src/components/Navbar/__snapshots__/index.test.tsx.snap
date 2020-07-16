@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar matches screenshot 1`] = `
+<div>
+  <div>
+    <nav>
+      <div
+        class="logo-content"
+      >
+        <a
+          href="/"
+        >
+          <img
+            alt="List It Logo"
+            src="images/logo-inverse.png"
+          />
+        </a>
+      </div>
+      <div
+        class="right-content"
+      />
+    </nav>
+    <nav
+      class="ui inverted top fixed menu"
+    >
+      <div
+        class="ui container"
+      >
+        <a
+          class="header item"
+          href="/"
+        >
+          <img
+            class="ui tiny image"
+            src="images/logo-inverse.png"
+            style="margin-right: 1.5em;"
+          />
+        </a>
+        <div
+          class="right menu"
+        >
+          <div
+            aria-expanded="false"
+            class="ui item simple dropdown"
+            role="listbox"
+            tabindex="0"
+          >
+            <div
+              aria-atomic="true"
+              aria-live="polite"
+              class="text"
+              role="alert"
+            >
+              Log In
+            </div>
+            <i
+              aria-hidden="true"
+              class="dropdown icon"
+            />
+            <div
+              class="menu transition"
+            >
+              <div
+                class="item"
+                role="option"
+              >
+                List Item
+              </div>
+              <div
+                class="item"
+                role="option"
+              >
+                List Item
+              </div>
+              <div
+                class="divider"
+              />
+              <div
+                class="header"
+              >
+                Header Item
+              </div>
+              <div
+                class="item"
+                role="option"
+              >
+                <i
+                  class="dropdown icon"
+                />
+                <span
+                  class="text"
+                >
+                  Submenu
+                </span>
+                <div
+                  class="menu transition"
+                >
+                  <div
+                    class="item"
+                    role="option"
+                  >
+                    List Item
+                  </div>
+                  <div
+                    class="item"
+                    role="option"
+                  >
+                    List Item
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item"
+                role="option"
+              >
+                List Item
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <style>
+      
+                .nav {
+                    display: flex;
+                    background-color: #37A6CD;
+                    height: 32px;
+                    width: calc(100vw - 32px);
+                    padding: 16px;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: #FFF;
+                }
+                .logo-content {
+                }
+                .logo-content img {
+                    height: 32px;
+                }
+                .right-content a {
+                    color: #FFF;
+                    text-decoration: none;
+                }
+            
+    </style>
+  </div>
+</div>
+`;
