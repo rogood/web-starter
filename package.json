@@ -19,7 +19,7 @@
     "bootstrap": "^4.4.1",
     "classnames": "^2.2.6",
     "firebase": "^7.14.1",
-    "next": "^9.4.4",
+    "next": "^11.1.0",
     "next-pwa": "^2.3.3",
     "next-translate": "^0.14.3",
     "node-sass": "^4.13.1",
