@@ -1,7 +1,0 @@
-node_modules
-.next
-pages
-jest.config.js
-
-**/public/workbox-*.js*
-**/public/sw.js*
