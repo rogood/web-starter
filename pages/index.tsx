@@ -2,8 +2,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import Button from '@mui/material/Button';
 
+import theme from '../theme';
+import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -25,10 +27,17 @@ const Home: NextPage = () => {
           </Link>
         </nav>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <div className={styles.description} style={{backgroundColor: theme.palette.primary.main}}>
+          <p>
+            Get started by editing{' '}
+            <code className={styles.code}>pages/index.js</code>
+          </p>
+          
+          <div>
+            <Button variant="contained">Mui Button</Button>
+          </div>
+        </div>
+
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
