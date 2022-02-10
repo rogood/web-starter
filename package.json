@@ -22,7 +22,7 @@
     "next": "^9.4.4",
     "next-pwa": "^2.3.3",
     "next-translate": "^0.14.3",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
